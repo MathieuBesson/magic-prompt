@@ -1,5 +1,5 @@
 #!/bin/bash
 
-go_to() {
+move_to() {
   cd "$@"
 }
