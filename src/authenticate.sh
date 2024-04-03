@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PASS_FILE=".pass"
+PASS_FILE="secret/.pass"
 
 hash_password() {
   password="$1"
@@ -82,7 +82,7 @@ update_password() {
         stored_hashed_password=$(hash_password "$entered_password")
         echo -e "$entered_username $stored_hashed_password"
         echo -e "$entered_username $stored_hashed_password" > "$PASS_FILE"
-        echo "Mot de passe créé avec succès."
+        echo "Mot de passe sauvegardé avec succès."
     fi
 }
 
@@ -99,7 +99,7 @@ authenticate() {
 
         check_credentials "$stored_username" "$stored_hashed_password" "$entered_username" "$entered_hashed_password"
     else
-        create_password
+        create_new_password
     fi
 
     echo;

@@ -1,0 +1,1 @@
+My Magic Prompt : Le prompt bash pour le cours de scripting bash avancé

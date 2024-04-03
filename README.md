@@ -1,44 +1,62 @@
-# My Magic prompt 
+# My Magic Prompt
+
+## Consignes de l'exercice
+
+- [Lien consignes de l'exercice](https://docs.google.com/presentation/d/1lkhMRT13xt1UtHdR_GeVHKvkmeRAoywZmVjDWWnjZJs/edit?usp=sharing)
+
+## Prérequis
+
+## OS 
+
+Une distribution linux, WSL ou Mac
+
+### Utilitaires
+
+- curl
+- make 
+- mailutils
+- vim
+
+## Usage
+
+- Lancement du prompt : 
+
+```bash
+make my-magic-prompt
+```
+
+- Pour accéder au prompt, vous devez fournir un mot de passe et un login spécifique, ou créer les vôtres.
+
+- Lancement des commandes : 
+
+```bash
+[COMMANDE] [ARGUMENTS] [OPTIONS]
+```
 
 ## Commandes disponibles : 
 
-prompt par mot de passe et login
+- Commandes :
+
+- **passw** : Permet de changer le mot de passe avec une demande de confirmation
+- **profil** : Affiche toutes les informations sur vous-même (Prénom, Nom, Âge, Email)
+- **ls** : Liste des fichiers et des dossiers visibles et cachés
+- **cd** : Permet de naviguer dans un dossier que vous venez de créer ou de revenir au dossier précédent
+- **pwd** : Indique le répertoire actuel
+- **hour** : Donne l'heure actuelle
+- **rm** : Supprime un fichier
+- **rmd**, **rmdir** : Supprime un dossier
+- **httpget** : Télécharge le code source HTML d'une page web et l'enregistre dans un fichier spécifique. Vous demande le nom du fichier.
+- **smtp** : Vous permet d'envoyer un e-mail avec une adresse, un sujet et le corps du message
+- **open** : Ouvre un fichier directement dans l'éditeur Vim même si le fichier n'existe pas
+- **age** : Demande votre âge et vous indique si vous êtes majeur ou mineur
+- **quit**, **exit** : Permet de sortir du prompt
+- **help** : Affiche les commandes disponibles
+- **about** : Description du programme
+- **version**, **vers**, **--v** : Affiche la version du promptage
 
 
-help : listing des commandes dispo
-about : une description de votre programme
-version ou --v ou vers :  affiche la version de votre prompt
-profil : permet d’afficher toutes les informations sur vous même.
-First Name, Last name, age, email
+## TODO
 
-ls : liste fichiers et dossiers visible et caché
-rm : supprimer un fichier
-rmd ou rmdir : supprimer un dossier
-age : vous demande votre âge et vous dit si vous êtes majeur ou mineur
-quit : permet de sortir du prompt
-passw : permet de changer le password avec une demande de confirmation
-cd : aller dans un dossier que vous venez de créer ou de revenir à un dossier 
-précédent
-pwd : indique le répertoire actuelle courant
-hour : permet de donner l’heure actuelle
-* : indiquer une commande inconnu
-
-
-httpget : permet de télécharger le code source html d’une page web et de l’enregistrer dans un fichier spécifique. Votre prompt doit vous demander quel sera le nom du fichier.
-smtp : vous permet d’envoyer un mail avec une adresse un sujet et le corp du mail
-open : ouvrir un fichier directement dans l’éditeur VIM même si le fichier n’existe pas
-
-
-
-
-
-Pour faire valider votre exercice, il devra être sur gitlabs …
-
-Vous devez réaliser la documentation du prompt dans un README.md avec markdown
-
-Vous devez respecter “la structure de base d’un script Bash” vu dans ce cours.
-
-
-## Liens utiles 
-
-- [Consignes de l'exercice]()
+- Ajouter des vérifications dans les paramètres de fonction
+- Ajouter la bashdoc
+- Relire le code et refacto

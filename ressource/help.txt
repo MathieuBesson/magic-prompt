@@ -1,0 +1,24 @@
+Pour accéder au prompt, vous devez fournir un mot de passe et un login spécifique.
+Commande de lancement du prompt initial : "make my-magic-prompt"
+
+Usage: 
+- make my-magic-prompt
+- [COMMANDE] [ARGUMENTS] [OPTIONS]
+
+Commandes :
+    passw                 Permet de changer le mot de passe avec une demande de confirmation
+    profil                Affiche toutes les informations sur vous-même (Prénom, Nom, Âge, Email)
+    ls                    Liste des fichiers et des dossiers visibles et cachés
+    cd                    Permet de naviguer dans un dossier que vous venez de créer ou de revenir au dossier précédent
+    pwd                   Indique le répertoire actuel
+    hour                  Donne l'heure actuelle
+    rm                    Supprime un fichier
+    rmd, rmdir            Supprime un dossier
+    httpget               Télécharge le code source HTML d'une page web et l'enregistre dans un fichier spécifique. Vous demande le nom du fichier.
+    smtp                  Vous permet d'envoyer un e-mail avec une adresse, un sujet et le corps du message
+    open                  Ouvre un fichier directement dans l'éditeur Vim même si le fichier n'existe pas
+    age                   Demande votre âge et vous indique si vous êtes majeur ou mineur
+    quit, exit            Permet de sortir du prompt
+    help                  Affiche les commandes disponibles
+    about                 Description du programme
+    version, vers, --v    Affiche la version du promptage

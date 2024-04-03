@@ -1,5 +1,5 @@
 #!/bin/bash
 
 hour() {
-  date | awk '{print $4}'
+  echo $(date +%H:%M)
 }
