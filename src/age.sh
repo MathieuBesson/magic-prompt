@@ -1,5 +1,8 @@
 #!/bin/bash
 
+##
+# DEFINITION : Demande L'âge et dit si vous êtes majeur ou mineur
+##
 age() {
     read -p "Veuillez entrer votre âge : " age_input
     if ! [[ "$age_input" =~ ^[0-9]+$ ]]; then

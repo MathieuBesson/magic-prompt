@@ -2,26 +2,28 @@
 
 # My Magic Prompt : Le prompt bash pour le cours de scripting bash avancé
 
-source src/quit.sh
-source src/list.sh
-source src/remove_file.sh
-source src/remove_dir.sh
-source src/age.sh
-source src/authenticate.sh
-source src/current_folder.sh
-source src/move_to.sh
-source src/hour.sh
-source src/httpget.sh
-source src/smtp.sh
-source src/open.sh
-source src/profil.sh
-source src/version.sh
-source src/about.sh
-source src/help.sh
+##
+# DEFINITION : Chargement des scripts sources
+##
+source_scripts() {
+  local folder_scripts=$(echo $(dirname $(realpath ${BASH_SOURCE[0]}))/..)/src
 
+  # Chargement des scripts du dossier 
+  for script in $folder_scripts/*; do
+      [ -e "$script" ] || continue
+      source "$script"
+  done
+}
+
+##
+# DEFINITION : Exécution des commandes intéractives
+# PARAMETERS : 
+#              $cmd : Commande lancé par l'utilisateur
+#              $argv : Liste des arguments de la commande lancé par l'utilisateur
+##
 cmd() {
-  cmd=$1
-  argv=$*
+  local cmd="$1"
+  local argv="$*"
 
   case "${cmd}" in
     # Sortie du script
@@ -77,11 +79,19 @@ cmd() {
   esac
 }
 
+##
+# DEFINITION : Fonction de base du script
+##
 main() {
   local lineCount=1
 
-  # authenticate
+  # Chargement des scripts 
+  source_scripts
 
+  # Authentification du script
+  authenticate
+
+  # Lancement des commandes en infini
   while [ 1 ]; do
     date=$(date +%H:%M)
     echo -ne "${date} - [\033[31m${lineCount}\033[m] - \033[33m$PWD\033[m ~ 🔮  ~ "
@@ -92,4 +102,5 @@ main() {
   done
 }
 
+# Point d'entrée du script
 main

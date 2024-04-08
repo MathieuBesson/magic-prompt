@@ -1,5 +1,8 @@
 #!/bin/bash
 
+##
+# DEFINITION : Donne le contenu d'un fichier
+##
 display_file_content() {
     local filePath="$1"
 
