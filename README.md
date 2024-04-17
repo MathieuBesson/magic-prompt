@@ -6,7 +6,7 @@
 
 ## Prérequis
 
-## OS 
+### OS 
 
 Une distribution linux, WSL ou Mac
 
