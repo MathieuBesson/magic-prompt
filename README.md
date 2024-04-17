@@ -35,8 +35,6 @@ make my-magic-prompt
 
 ## Commandes disponibles : 
 
-- Commandes :
-
 - **passw** : Permet de changer le mot de passe avec une demande de confirmation
 - **profil** : Affiche toutes les informations sur vous-même (Prénom, Nom, Âge, Email)
 - **ls** : Liste des fichiers et des dossiers visibles et cachés
