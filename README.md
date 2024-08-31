@@ -51,3 +51,7 @@ make my-magic-prompt
 - **help**: Displays available commands.
 - **about**: Description of the program.
 - **version**, **vers**, **--v**: Displays the prompt's version.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
