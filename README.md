@@ -1,8 +1,8 @@
 # My Magic Prompt
 
-## Exercise Instructions
+## Description
 
-- [Link to Exercise Instructions](./shell-scripting.pdf)
+My magic prompt is a cli in a terminal that allows you to launch commands that perform certain actions. This project being a student project it is based on precise instructions available here : [Link to Exercise Instructions](./shell-scripting.pdf)
 
 ## Prerequisites
 
