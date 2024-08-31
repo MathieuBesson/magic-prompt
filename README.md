@@ -12,10 +12,10 @@ A Linux distribution, WSL, or macOS
 
 ### Utilities
 
-- ![curl](https://img.shields.io/badge/curl-07405E?logo=curl&logoColor=white&labelColor=07405E)
-- ![make](https://img.shields.io/badge/make-427819?logo=gnu&logoColor=white&labelColor=427819)
-- ![mailutils](https://img.shields.io/badge/mailutils-DB4437?logo=maildotcom&logoColor=white&labelColor=DB4437)
-- ![vim](https://img.shields.io/badge/vim-019733?logo=vim&logoColor=white&labelColor=019733)
+![curl](https://img.shields.io/badge/curl-07405E?logo=curl&logoColor=white&labelColor=07405E)
+![make](https://img.shields.io/badge/make-427819?logo=gnu&logoColor=white&labelColor=427819)
+![mailutils](https://img.shields.io/badge/mailutils-DB4437?logo=maildotcom&logoColor=white&labelColor=DB4437)
+![vim](https://img.shields.io/badge/vim-019733?logo=vim&logoColor=white&labelColor=019733)
 
 ## Usage
 
