@@ -2,7 +2,7 @@
 
 ## Consignes de l'exercice
 
-- [Lien consignes de l'exercice](https://docs.google.com/presentation/d/1lkhMRT13xt1UtHdR_GeVHKvkmeRAoywZmVjDWWnjZJs/edit?usp=sharing)
+- [Lien consignes de l'exercice](./Shell Scripting.pdf)
 
 ## Prérequis
 
